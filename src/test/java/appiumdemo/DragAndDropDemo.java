@@ -49,7 +49,7 @@ public class DragAndDropDemo {
 			       //find drag and drop button
 			       WebElement dragAndDropBtn =  driver.findElement(By.xpath("//android.widget.TextView[@content-desc=\"Drag and Drop\"]"));
 			       dragAndDropBtn.click(); //perform click action on view button
-			       
+			       Thread.sleep(2000);
 			       WebElement source =  driver.findElement(By.xpath("//android.view.View[@resource-id=\"io.appium.android.apis:id/drag_dot_1\"]"));
 			     
 			       WebElement destination =  driver.findElement(By.xpath("//android.view.View[@resource-id=\"io.appium.android.apis:id/drag_dot_2\"]"));
